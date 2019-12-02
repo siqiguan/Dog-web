@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a368f6aa51.js"></script>
+  <style media="screen">
+  .footer:hover{
+
+      color: #ff4c68;
+
+  }
+body {
+
+  overflow-x: hidden;
+    text-align: left;
+}
+
+.main{
+  z-index: 1
+  position:relative;
+}
+.title{
+  text-align: center;
+}
+
+.popular{
+    color:#ef8172;
+    text-align:center;
+    margin-bottom:30px;
+}
+.name{
+  text-align:center;
+  padding-bottom:15px;
+}
+h3{
+  margin-top:20px;
+margin-bottom:20px;
+}
+.price{
+  text-align:center;
+  margin-top:20px;
+  font-size:25px;
+  color:black;
+}
+.items{
+  margin-top:20px;
+}
+.item{
+  color:black;
+}
+.button{
+  margin-top:40px;
+margin-bottom:40px;
+}
+img {
+  max-width:80%; }
+.parapgraph{
+  line-height:35px;
+}
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.checked, .price span {
+  color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #ff9f1a;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+  .add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+  </style>
+  </head>
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Dog Shelter</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="AllPuppies.html">All Puppies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+              <div class="dropdown">
+                <a class="navbar navbar-expand-lg navbar-dark nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resources
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Training</a>
+                  <a class="dropdown-item" href="#">Health</a>
+                  <a class="dropdown-item" href="#">Grooming</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <!-- Title -->
+        <!-- <div class="row">
+          <div class="col-lg-6">
+            <h1>Welcome home your new furry family memeber</h1>
+            <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
+            <button class="btn btn-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+          </div>
+          <div class="col-lg-6">
+            <img class="title-image" src="images/adult-animal-dog-enjoyment-789817.jpg" alt="iphone-mockup">
+          </div>
+        </div> -->
+        <h1 class="title">Puppies for Adoption</h1>
+        <h3 class="title">you can rest assured that your new puppy is coming from a vetted, responsible breeder.
+           We are a community of dog lovers committed to helping you
+           find the perfect puppy for your experience level, family, and home.</h3>
+    </section>
+</div>
+
+<section class="main">
+
+      <div class="container">
+  <div class="card" style="margin-top:0px;">
+    <div class="container-fliud">
+    <h2 class="name">Junior</h2>
+      <p class = "popular">60 people are interested in  this puppy</p>
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+
+          <div class="preview-pic tab-content">
+            <div class="tab-pane active" id="pic-1"><img src="images/dog3.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog3.2.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog3.3.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog3.4.jpg" /></div>
+          </div>
+        </div>
+
+
+        <div class="details col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Dachshund</h3>
+              <h3>Male • 12 weeks</h3>
+
+            </div>
+            <div class="col-md-6">
+              <p class="price">$3099</p>
+
+            </div>
+          </div>
+          <div class="row items">
+            <div class="col-md-6">
+                <p>
+                  <span>Puppy ID</span>
+                  <span class="item">#618669</span>
+                  </p>
+                <p>
+                  <span>DOB</span>
+                  <span class="item">September 6, 2019</span>
+                </p>
+                <p>
+                  <span>Available</span>
+                   <span class="item">I'm ready today!</span>
+                  </p>
+                <p>
+                  <span>Color</span>
+                  <span class="item">Red</span>
+                  <!-- <span class="item">Light Golden</span> -->
+                </p>
+            </div>
+            <div class="col-md-6">
+              <p><span>Mom's weight </span>
+                <span class="item">9-10lbs</span></p>
+                <p><span>Dad's weight</span>
+                <span class="item">12-14lbs</span></p>
+                <p><span>Registry</span>
+                <span class="item">UABR</span></p>
+            </div>
+          </div>
+          <div class="button">
+            <a href="checkout3.html" class="btn btn-dark">Reserve Me</a>
+          </div>
+          <div class="description">
+            <h3>About Junior</h3>
+            <div class="content">
+              <p class="parapgraph">
+                  Meet Junior! This lovable pup is currently searching for a good,
+                  loving home. Whether playing all day or relaxing on the couch,
+                   Junior promises to be your most loving companion.
+                    This cutie will arrive to his new home up to date on vaccinations.
+                    Junior can't wait to jump into your arms and shower you with his many,
+                    many puppy kisses! Don't miss out!
+              </p>
+            </div>
+          </div>
+
+          <div class="description">
+            <h3>About Dachshunds</h3>
+            <div class="content">
+              <p class="parapgraph">
+              Originating in Germany, this dog was historically not intended to become
+              the easy-going lap dog it is today. Dachshunds were bred to be badger-hunting dogs,
+              with their sensitive sense of smell and low-to-the-ground stature. Today,
+              Dachshunds come in two sizes (standard and miniature) and in three varieties
+              (smooth-, wire- and long-haired). They are curious and friendly in nature.
+              These long-bodied, lively pups are sure to steal the hearts of everyone they meet.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+    <section id="cta">
+
+      <h3 class="cta-text">Find the perfect puppy with confidence and ease.</h3>
+      <button class="download-button btn btn-lg btn-dark"type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg btn-light"type="button"><i class="fab fa-google-play"></i>Download</button>
+
+    </section>
+    <footer id="footer">
+      <i onclick="document.location.href='https://twitter.com/'" class="social-icon fab fa-twitter footer"></i>
+      <i onclick="document.location.href='https://www.facebook.com/'" class="social-icon fab fa-facebook-f footer"></i>
+      <i onclick="document.location.href='https://www.instagram.com/'" class="social-icon fab fa-instagram footer"></i>
+      <i onclick="document.location.href='mailto:siqiguan@gwu.edu'" class="social-icon fas fa-envelope footer"></i>
+      <p>© Copyright by Siqi Guan</p>
+
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400|Ubuntu&display=swap" rel="stylesheet">
+    <!--css stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a368f6aa51.js"></script>
+  <style media="screen">
+  .footer:hover{
+
+      color: #ff4c68;
+
+  }
+body {
+
+  overflow-x: hidden;
+    text-align: left;
+}
+
+.main{
+  z-index: 1
+  position:relative;
+}
+.title{
+  text-align: center;
+}
+
+.popular{
+    color:#ef8172;
+    text-align:center;
+    margin-bottom:30px;
+}
+.name{
+  text-align:center;
+  padding-bottom:15px;
+}
+h3{
+  margin-top:20px;
+margin-bottom:20px;
+}
+.price{
+  text-align:center;
+  margin-top:20px;
+  font-size:25px;
+  color:black;
+}
+.items{
+  margin-top:20px;
+}
+.item{
+  color:black;
+}
+.button{
+  margin-top:40px;
+margin-bottom:40px;
+}
+img {
+  max-width:80%; }
+.parapgraph{
+  line-height:35px;
+}
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 18%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: bold; }
+
+.checked, .price span {
+  color: #ff9f1a; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+.color {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 2em;
+  width: 2em;
+  border-radius: 2px; }
+  .color:first-of-type {
+    margin-left: 20px; }
+
+.add-to-cart, .like {
+  background: #ff9f1a;
+  padding: 1.2em 1.5em;
+  border: none;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease; }
+  .add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; }
+
+.not-available {
+  text-align: center;
+  line-height: 2em; }
+  .not-available:before {
+    font-family: fontawesome;
+    content: "\f00d";
+    color: #fff; }
+
+.orange {
+  background: #ff9f1a; }
+
+.green {
+  background: #85ad00; }
+
+.blue {
+  background: #0076ad; }
+
+.tooltip-inner {
+  padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+  </style>
+  </head>
+  <body>
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">Dog Shelter</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="AllPuppies.html">All Puppies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+              <div class="dropdown">
+                <a class="navbar navbar-expand-lg navbar-dark nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Resources
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Training</a>
+                  <a class="dropdown-item" href="#">Health</a>
+                  <a class="dropdown-item" href="#">Grooming</a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <!-- Title -->
+        <!-- <div class="row">
+          <div class="col-lg-6">
+            <h1>Welcome home your new furry family memeber</h1>
+            <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
+            <button class="btn btn-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+          </div>
+          <div class="col-lg-6">
+            <img class="title-image" src="images/adult-animal-dog-enjoyment-789817.jpg" alt="iphone-mockup">
+          </div>
+        </div> -->
+        <h1 class="title">Puppies for Adoption</h1>
+        <h3 class="title">you can rest assured that your new puppy is coming from a vetted, responsible breeder.
+           We are a community of dog lovers committed to helping you
+           find the perfect puppy for your experience level, family, and home.</h3>
+    </section>
+</div>
+
+<section class="main">
+
+      <div class="container">
+  <div class="card" style="margin-top:0px;">
+    <div class="container-fliud">
+    <h2 class="name">Clover</h2>
+      <p class = "popular">30 people are interested in  this puppy</p>
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+
+          <div class="preview-pic tab-content">
+            <div class="tab-pane active" id="pic-1"><img src="images/dog2.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog2.2.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog2.3.jpg" /></div>
+            <div class="tab-pane active" id="pic-1"><img src="images/dog2.4.jpg" /></div>
+          </div>
+        </div>
+
+
+        <div class="details col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Pug</h3>
+              <h3>Male • 6 weeks</h3>
+
+            </div>
+            <div class="col-md-6">
+              <p class="price">$3149</p>
+
+            </div>
+          </div>
+          <div class="row items">
+            <div class="col-md-6">
+                <p>
+                  <span>Puppy ID</span>
+                  <span class="item">#624587</span>
+                  </p>
+                <p>
+                  <span>DOB</span>
+                  <span class="item">October 20, 2019</span>
+                </p>
+                <p>
+                  <span>Available</span>
+                   <span class="item">December 16, 2019</span>
+                  </p>
+                <p>
+                  <span>Color</span>
+                  <span class="item">Fawn</span>
+                  <!-- <span class="item">Light Golden</span> -->
+                </p>
+            </div>
+            <div class="col-md-6">
+              <p><span>Mom's weight </span>
+                <span class="item">18-20lbs</span></p>
+                <p><span>Dad's weight</span>
+                <span class="item">16-18lbs</span></p>
+                <p><span>Registry</span>
+                <span class="item">AKC</span></p>
+            </div>
+          </div>
+          <div class="button">
+            <a href="checkout2.html" class="btn btn-dark">Reserve Me</a>
+          </div>
+          <div class="description">
+            <h3>About Clover</h3>
+            <div class="content">
+              <p class="parapgraph">
+                 This is Clover! He loves to play and run around all day.
+                  He is a little ball of fire! Clover will be a very loyal
+                   companion to his new forever family and will come home to
+                   you up to date on vaccinations and a full head to tail vet check.
+                   He hopes you love to cuddle and take a nap after a long day of fun.
+                    Clover will be ready for all the love he can get. Don’t miss out on
+                    this pup. His bags are packed and he’s ready to go!
+              </p>
+            </div>
+          </div>
+
+          <div class="description">
+            <h3>About Pugs</h3>
+            <div class="content">
+              <p class="parapgraph">
+                Pugs have a very amusing, distinctive look, with their adorable face wrinkles, bulging eyes, curly tail and pushed-back noses. Originally bred as companion dogs, Pugs have flourished as a breed for thousands of years. Throughout the centuries, Pugs have certainly retained their charming personalities and cheerful dispositions, and make perfect family dogs. They are always eager to be near their families and to please them in any way they can. These small-sized dogs are only somewhat active and therefore do well in living spaces small and large.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+    <section id="cta">
+
+      <h3 class="cta-text">Find the perfect puppy with confidence and ease.</h3>
+      <button class="download-button btn btn-lg btn-dark"type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="download-button btn btn-lg btn-light"type="button"><i class="fab fa-google-play"></i>Download</button>
+
+    </section>
+    <footer id="footer">
+      <i onclick="document.location.href='https://twitter.com/'" class="social-icon fab fa-twitter footer"></i>
+      <i onclick="document.location.href='https://www.facebook.com/'" class="social-icon fab fa-facebook-f footer"></i>
+      <i onclick="document.location.href='https://www.instagram.com/'" class="social-icon fab fa-instagram footer"></i>
+      <i onclick="document.location.href='mailto:siqiguan@gwu.edu'" class="social-icon fas fa-envelope footer"></i>
+      <p>© Copyright by Siqi Guan</p>
+
+    </footer>
+
+  </body>
+</html>
